@@ -29,7 +29,7 @@ open_application('C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.
 time.sleep(2)
 
 # Type random 10-character strings with a delay of 30 seconds between each input
-interval = 10 # check the delay in rewards and set accordingly
+interval = 6 # check the delay in rewards and set accordingly
 length = 3
 repetitions = 10
 type_random_string_with_delay(interval, length, repetitions)

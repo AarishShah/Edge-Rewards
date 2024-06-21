@@ -33,3 +33,8 @@ interval = 6 # check the delay in rewards and set accordingly
 length = 3
 repetitions = 10
 type_random_string_with_delay(interval, length, repetitions)
+
+# Close Microsoft Edge using os.system
+os.system("TASKKILL /F /IM msedge.exe")
+
+# Close on-screen keyboard using os.system (Incomplete)

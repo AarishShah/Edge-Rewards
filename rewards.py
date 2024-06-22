@@ -3,7 +3,6 @@ import time
 import random
 import string
 import os
-import psutil
 
 def open_application(application_path):
     os.startfile(application_path)

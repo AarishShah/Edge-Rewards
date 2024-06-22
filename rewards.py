@@ -3,6 +3,7 @@ import time
 import random
 import string
 import os
+import psutil
 
 def open_application(application_path):
     os.startfile(application_path)
@@ -16,12 +17,6 @@ def type_random_string_with_delay(interval, length, repetitions):
         pyautogui.press('enter')
         time.sleep(interval)
 
-# Open on-screen keyboard
-open_application('C:\\Windows\\System32\\osk.exe')
-
-# Give some time for the on-screen keyboard to open
-time.sleep(1)
-
 # Open Microsoft Edge
 open_application('C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe')
 
@@ -31,10 +26,8 @@ time.sleep(2)
 # Type random 10-character strings with a delay of 30 seconds between each input
 interval = 6 # check the delay in rewards and set accordingly
 length = 3
-repetitions = 10
+repetitions = 33
 type_random_string_with_delay(interval, length, repetitions)
 
 # Close Microsoft Edge using os.system
 os.system("TASKKILL /F /IM msedge.exe")
-
-# Close on-screen keyboard using os.system (Incomplete)
